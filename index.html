@@ -123,7 +123,7 @@
         .cards-container {
             flex: 1;
             display: grid;
-            grid-template-columns: repeat(9, 1fr);
+            grid-template-columns: repeat(7, 1fr);
             gap: 15px;
             padding: 20px;
             border-radius: 15px;
@@ -434,8 +434,8 @@
             // 生成乘法表算式（1×1到9×9）
             function generateEquations() {
                 const equations = [];
-                for (let i = 1; i <= 9; i++) {
-                    for (let j = 1; j <= 9; j++) {
+                for (let i = 1; i <= 6; i++) {
+                    for (let j = 1; j <= 6; j++) {
                         equations.push({
                             text: `${i}×${j}`,
                             product: i * j
